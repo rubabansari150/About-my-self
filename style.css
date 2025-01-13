@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("./images/tree.avif");
+  background-size: 100%;
+  font-style: italic;
+}
+
+.about,
+.skills,
+.experience {
+  padding: 10px 60px;
+  margin: 10px 370px;
+  border-radius: 20px;
+  display: block;
+}
+.about {
+  margin-top: 0;
+}
+.header {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.logo {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.about {
+  background: #fff;
+  box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.2);
+}
+.skills {
+  background: orange;
+  color: #fff;
+}
+.experience {
+  background: #fff;
+  box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.2);
+}
+.experience a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    &:hover {
+        color: orange;
+    }
+    font-weight: bold;
+}
+
+
+/* Add responsiveness */
+@media (max-width: 1024px) {
+    body {
+        background-size: cover; 
+    }
+    .about,
+    .skills,
+    .experience {
+      margin: 10px 100px; 
+      padding: 10px 30px;
+    }
+  
+    .logo {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+        background-size: 100%;
+      }
+    .about,
+    .skills,
+    .experience {
+      margin: 10px 20px; 
+      padding: 10px 20px;
+    }
+  
+    .header h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+        background-size: 100%; 
+        /* background-position: center;  */
+      }
+    .about,
+    .skills,
+    .experience {
+      margin: 5px 10px; 
+      padding: 10px 10px;
+    }
+  
+    .header h1 {
+      font-size: 1.2rem;
+    }
+  
+    .skills {
+      text-align: center; 
+    }
+  
+    
+  }
+  
